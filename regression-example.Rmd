@@ -1,0 +1,13 @@
+---
+output: word_document
+---
+## Regression- Example with R- Markdown
+### By Mandar Gadkari
+
+
+```{r}
+setwd("C:/Courses/BigData")
+mydata<- read.csv ("hw1_data.csv")
+summary(lm(Ozone ~ Temp + Month, data = mydata))
+```
+
